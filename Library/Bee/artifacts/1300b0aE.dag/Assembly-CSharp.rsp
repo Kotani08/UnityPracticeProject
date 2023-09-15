@@ -120,6 +120,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -329,6 +330,7 @@
 -r:"C:/Users/PC_User/Desktop/UnityProject/PractiseProject/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/PC_User/Desktop/UnityProject/PractiseProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -493,6 +495,7 @@
 "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Expression/CubismExpressionPreview.cs"
 "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Motion/CubismMotionPreview.cs"
 "Assets/Live2D/Cubism/Samples/Raycasting/RaycastHitDisplay.cs"
+"Assets/Scenes/GamepadExample.cs"
 "Assets/Scripts/CSVReader/CSVReader.cs"
 "Assets/Scripts/CSVReader/TextReader.cs"
 "Assets/Scripts/Delegate/BasicTheory/DelegatePractise.cs"
@@ -503,6 +506,7 @@
 "Assets/Scripts/Delegate/BasicTheory/UnityEvent/UnityEventPractice.cs"
 "Assets/Scripts/Delegate/CallBackPractice.cs"
 "Assets/Scripts/Delegate/FadeCallBack.cs"
+"Assets/Scripts/Dictionary/PlayerData.cs"
 "Assets/Scripts/Dictionary/SkillActionList.cs"
 "Assets/Scripts/Dictionary/SkillButton.cs"
 "Assets/Scripts/Dictionary/SkillDictionary.cs"

@@ -4,8 +4,7 @@ using UnityEngine;
 
 namespace SkillAction
 {
-    //MonoBehaviourが無いので注意
-        //MonoBehaviourが無いのでオブジェクトに付けたらエラーが出ます
+    //取り回しがしやすいように名前空間に定義
     public class SkillActionList
     {
         public void SkillAction(int SkillId)
@@ -35,6 +34,7 @@ namespace SkillAction
             }
         }
 
+        //実際呼ばれる内容
         private void NotSkill()
         {
             Debug.Log("効果は何も無いようだ");

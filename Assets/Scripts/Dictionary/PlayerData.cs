@@ -7,11 +7,14 @@ using System;
 
 namespace PlayerSaveData
 {
+    //PlayerDataを可視化して作ってる最中にデバッグをしやすくする目的でScriptable化
+
     [CreateAssetMenu(menuName = "MyScriptable/PlayerData")]
 
     [System.Serializable]
     public class PlayerData : ScriptableObject
     {
+        //可視化したい保持データ
         public string Name;
         public int[] SetSkillId = new int[3];
         public bool Toggle = false;
@@ -20,6 +23,7 @@ namespace PlayerSaveData
 
     public class SaveDataEditor
     {
+        //jsonでの書き込み読み込みを行う
         [SerializeField]
         private PlayerData _save;
         string json;
@@ -38,6 +42,7 @@ namespace PlayerSaveData
 
         public void SaveGameData()
         {
+            //書き込み
             //string getFilePath() { return Application.persistentDataPath + "/PaintData" + ".json"; }
             string getFilePath = Directory.GetCurrentDirectory();
             getFilePath += ("/" + "save.json");
@@ -50,7 +55,7 @@ namespace PlayerSaveData
                     sw.Write(json);
                     //Debug.Log(json);
                 }
-                catch (Exception e) //���s�������̏���
+                catch (Exception e) //エラーキャッチ
                 {
                     Debug.Log(e);
                 }
@@ -59,6 +64,7 @@ namespace PlayerSaveData
 
         public void LoadGameData()
         {
+            //Jsonで書き出したデータの読み込み
             JsonUtility.FromJsonOverwrite(json, _save);
         }
     }

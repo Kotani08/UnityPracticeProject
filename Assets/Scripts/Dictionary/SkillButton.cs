@@ -41,6 +41,7 @@ public class SkillButton : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     void Start()
     {
+        //タイマー機能を使いたいので取得
         _skillTimer=this.GetComponent<SkillTimer>();
     }
     

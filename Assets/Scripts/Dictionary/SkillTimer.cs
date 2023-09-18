@@ -19,11 +19,14 @@ public class SkillTimer : Timer
         SetMaxTime(_skillButton.GetSkillCoolTime());
     }
 
+    //押されたらクールタイムをリセットしてタイマーの時間をリセットする
     public void SkillTimerStart()
     {
         TimerReset();
         ButtonCoverOn();
     }
+
+    //クールタイム中は押せないようにカバーをActiveにする
     private void ButtonCoverOn()
     {
         SkillButtonCover.SetActive(true);
@@ -32,6 +35,7 @@ public class SkillTimer : Timer
 
     IEnumerator TimerObservation()
     {
+        //タイマー処理
         while (timerStop == false) {
             yield return null;
             if(timerStop == true)
